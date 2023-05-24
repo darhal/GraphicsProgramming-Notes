@@ -13,7 +13,7 @@ Nvidia's Deep Learning Super Sampling is an AI based approach to image reconstri
 This technique requires special Tensor Cores to run at optimal speed and is limited to Nvidia GPU's
 
 ### Temporal Anti-Aliasing Upscaling (TAAU)
-A software technique implemented and used by UE4.
+[TAAU](https://docs.unrealengine.com/en-US/temporal-upscalers-in-unreal-engine/) is technique implemented and used by UE4.
 
 ## 2nd Generation Image Reconstruction Techniques
 These techniques can upscale images as low as quarter of the native presentation resolution without any major image quality losses.
@@ -33,4 +33,4 @@ Similar to DLSS1 but offer the possiblity to upscale from quarter resolution (st
 Quite similar in terms of visual quality to DLSS2. It uses previous frames and a machine learning model to upscale a low resolution image. Apprently, it doens't need motion vectors (TO CONFIRM).
 
 ### Temporal Super Resolution
-A software technique implemented and used by UE5.
+[TSR](https://docs.unrealengine.com/en-US/temporal-super-resolution-in-unreal-engine/) is a technique implemented and used by UE5.
