@@ -3,13 +3,17 @@ Anti-Aliasing is the process of removing jagged, or stair-stepped, lines on edge
 There are different methods of anti-aliasing used to reduce these types of visual artifacts. 
 Some are developed for use with specific renderers and platforms, while others are ideal for improving performance and fidelity.
 
-## MSAA
+## Anti-Aliasing Techniques :
+### MSAA
 Multiple Sample Anti-Aliasing is supported by  most GPU hardware but doesn't work with deferred renderers.
-## FXAA
+### FXAA
 Fast Approximate Anti-Aliasing
-## TAA
+### TAA
 Temporal Anti-Aliasing is a software implementation that used previous frames (with some jitter) to remove the aliasing in the current frame.
 This method is effective and considered an industry standards. 
 However it suffers from ghosting/trailing effects where you can see ghosting effect behind moving objects in a scene (this is a result of using previous frames).
-## TSR
+### TSR
 Temporal Super Resolution
+
+## Anti-Aliasing for Upscaling
+Anti-Aliasing techniques can also be used to upscale images.
