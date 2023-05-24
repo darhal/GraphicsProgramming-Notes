@@ -3,4 +3,5 @@ These are my personal notes on interactive computer graphics as I explore this f
 
 ## Table of contents
 * [Introduction](Introduction.md)
+* [Anti Aliasing](AntiAliasing.md)
 * [Image Reconstruction](Image_Reconstruction.md)
