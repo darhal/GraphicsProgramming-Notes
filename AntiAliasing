@@ -5,9 +5,14 @@ Some are developed for use with specific renderers and platforms, while others a
 
 ## Anti-Aliasing Techniques :
 ### MSAA
-Multiple Sample Anti-Aliasing is supported by  most GPU hardware but doesn't work with deferred renderers.
+Multiple Sample Anti-Aliasing only smooths parts of the frame. 
+MSAA primarily looks at areas that are issue-prone, like the edges of geometry. 
+Where aliasing problems can occur on edges, MSAA manipulates their color to be between the color of the two pixels that make up the edge. 
+The dithering effect gives the illusion of smoother edges.
+MSAA is supported by most GPU hardware but doesn't work with deferred renderers.
 ### FXAA
-Fast Approximate Anti-Aliasing
+Fast Approximate Anti-Aliasing is a spatial-only anti-aliasing technique (that is a post-processing) effect that uses a high contrast filter to find edges and smooth them by blending (dithering) between the pixel edges. 
+It is fast to render and well-suited for low-end devices and desktops but the final image can lose fidelity when compared to other anti-aliasing techniques.
 ### TAA
 Temporal Anti-Aliasing is a software implementation that used previous frames (with some jitter) to remove the aliasing in the current frame.
 This method is effective and considered an industry standards. 
