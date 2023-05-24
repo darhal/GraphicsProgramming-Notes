@@ -30,7 +30,7 @@ This technique is usually fast and is cross GPU vendor (meaning it can run on an
 Similar to DLSS1 but offer the possiblity to upscale from quarter resolution (still limited to Nvidia GPUs)
 
 ### Intel's XeSS 1
-Quite similar in terms of visual quality to DLSS2. It uses previous frames and a machine learning model to upscale a low resolution image. Apprently, it doens't need motion vectors (TO CONFIRM).
+Quite similar in terms of visual quality and performance to DLSS2. It uses previous frames and a machine learning model to upscale a low resolution image. Apprently, it doens't need motion vectors (TO CONFIRM). XeSS is cross-vendor and can run on any GPU given that it's powerful enough to run the ML model that does the upscaling.
 
 ### Temporal Super Resolution
 [TSR](https://docs.unrealengine.com/en-US/temporal-super-resolution-in-unreal-engine/) is a technique implemented and used by UE5.
