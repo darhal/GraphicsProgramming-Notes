@@ -21,4 +21,4 @@ However it suffers from ghosting/trailing effects where you can see ghosting eff
 Temporal Super Resolution
 
 ## Anti-Aliasing for Upscaling
-Anti-Aliasing techniques can also be used to upscale images.
+Anti-Aliasing techniques can also be used to upscale images. These techniques are well described in [Image Reconstruction](Image_Reconstruction.md)
