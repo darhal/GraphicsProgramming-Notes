@@ -5,7 +5,7 @@ To access GPU graphics capbilities and be able to do things on the GPU one need 
 
 ### High Level APIs
 These are the older APIs that existed for a longtime. The vendors driver do most of the work for us while the programmer have little to no-control over low level concepts such as memory managment, synchronization, etc... This makes these APIs easy to use (suitable for prototyping, etc).
-The vast majority of these APIs operates as a huge state machine (e.g. operations are performed on bound resources). They also usually have no or limited support for multi-threading.
+The vast majority of these APIs operates as a huge state machine (also called context) (e.g. operations are performed on bound resources). They also usually have no or limited support for multi-threading.
 |API|Platform|Shading Language|Description|
 |---|--------|----------------|-----------|
 |OpenGL|Cross-Platform|GLSL|Not an actual API but a specification maintained by Khronos Group. Vendors provide the actual implementation.|
