@@ -22,12 +22,13 @@ vec3 anotherVec = differentVec.zyw;
 vec4 otherVec = someVec.xxxx + anotherVec.yxzy;
 ```
 Similiarly we can construct other vectors based on this syntax : 
-```
+```glsl
 vec2 vect = vec2(0.5, 0.7);
 vec4 result = vec4(vect, 0.0, 0.0);
 vec4 otherResult = vec4(result.xyz, 1.0);
 ```
 
+Different flavours of vector include the following : 
 |Type|Fundamental Type|Dimension|
 |----|----------------|---------|
 |vecN|N float         |N       |
