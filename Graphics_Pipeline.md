@@ -3,6 +3,9 @@ The graphics commands are processed in a pipeline fashion (meaning input into a 
 The following image gives an overview of the graphics pipeline along with the different stages present in it. 
 ![The Graphics Pipeline](Media/3D-GraphicsPipeline.png)
 
+## Shaders
+Shaders are programs that run on the GPU cores. Shaders are isolated meaning that they don't communicate with each other except via their inputs and outputs.
+
 ## Overview of the graphics pipeline 
 The initial input to the pipeline is an array of data called **Vertex Data** (collection of verticies). Each vertex is a collection of data per 3D coordinate. Vertex data is represented using vertex attributes that can contain any type of data we want. Primitive type (i.e. render the vertex data as points, tringles or one line, etc) must be specified to make sense of vertex data.
 
