@@ -21,3 +21,7 @@ Also it's worth noting that these APIs support multi-threading as command record
 |Vulkan|Cross-Platform|SPIRV (GLSL or HLSL)|Not an actual API but a specification maintained by Khronos Group. Vendors provide the actual implementation. |
 |DirectX 12| Windows + Xbox|HLSL|This is an actual specification and API maintained and implemented by Microsoft on top of vendor firmware.|
 |Metal| Apple|MSL|This is an actual specification and API maintained and implemented by Apple for their hardware|
+
+## Viewport
+Viewport is a rectangle (X,Y,W,H) that defines where the rendering must happen. Viewports smaller than window size will leave blank areas in the window where other renderings/paintings can happen.
+The viewport is then 'normalized' (at least in OGL) to be in (-1.0, 1.0) range. If we have a window of size (800,600) and viewport of size (0,0,800,600) the center in OGL would be (0.0,0.0) while (-0.5,0.5) would be mapped to (200,450) in screen coordinates.
