@@ -9,6 +9,8 @@ The initial input to the pipeline is an array of data called **Vertex Data** (co
 ### Vertex shader
 Vertex shader takes as input a single vertex. The main job of the vertex shader is to transforms the local 3D coordinates to different 3D coordinates. Vertex shader is invoked once per vertex.
 
+In OGL, only 3D coordiantes in the range [-1.0:1.0] are processed (coordinates outside this range won't be visible). This region is called the normalized device coordinates. Hence vertex output in the vertex shader must be in this range. These NDC coordiantes will be transformed to screen-space coordiantes via the viewport-transform using the data used to setup the viewport. The resulting screen-space coordinates are then transformed to fragments for the fragment shader.
+
 ### Geometry shader [Optional]
 Takes vertex shader output and generate other shapes by emitting new verticies to form new (or other) primitve(s) (e.g. generates a second triangle out of the given shape).
 
