@@ -8,7 +8,7 @@ Like C the entry point is the main function where we process the inputs and assi
 
 ### Types : 
 GLSL has the most of the default basic scalar types like :  `int`, `float`, `double`, `uint` and `bool`.  
-It also has two container types that will be used a lot namely vectors and matricies. 
+It also has two container types that will be used a lot namely vectors and matrices. 
 These types are limited to up to 4 components per dimension (2, 3 or 4).
 
 #### Vectors
@@ -21,7 +21,7 @@ vec4 differentVec = someVec.xyxx;
 vec3 anotherVec = differentVec.zyw;
 vec4 otherVec = someVec.xxxx + anotherVec.yxzy;
 ```
-Similiarly we can construct other vectors based on this syntax : 
+Similarly we can construct other vectors based on this syntax : 
 ```glsl
 vec2 vect = vec2(0.5, 0.7);
 vec4 result = vec4(vect, 0.0, 0.0);
@@ -40,6 +40,6 @@ Different flavours of vector include the following :
 Compon
 ### Vertex Shader : 
 In the vertex shader, each input variable is also known as a vertex attribute. There is a maximum number of vertex attributes we are allowed to declare that is limited by the hardware. 
-OGl guarantees at minimum 16 4-component vertex attributes. Some hardware may have more but the user have to query for this.
+OGL guarantees at minimum 16 4-component vertex attributes. Some hardware may have more but the user have to query for this.
 
 ## HLSL Concepts

@@ -12,10 +12,10 @@ The dithering effect gives the illusion of smoother edges.
 MSAA is supported by most GPU hardware but doesn't work with deferred renderers.
 ### FXAA
 Fast Approximate Anti-Aliasing is a spatial-only anti-aliasing technique (that is a post-processing) effect that uses a high contrast filter to find edges and smooth them by blending (dithering) between the pixel edges. 
-It is fast to render and well-suited for low-end devices and desktops but the final image can lose fidelity when compared to other anti-aliasing techniques.
+It is fast to render and well-suited for low-end devices and desktops, but the final image can lose fidelity when compared to other anti-aliasing techniques.
 ### TAA
 Temporal Anti-Aliasing is a software implementation that used previous frames (with some jitter) to remove the aliasing in the current frame.
-This method is effective and considered an industry standards. 
+This method is effective and considered an industry standard. 
 However it suffers from ghosting/trailing effects where you can see ghosting effect behind moving objects in a scene (this is a result of using previous frames).
 ### TSR
 Temporal Super Resolution
